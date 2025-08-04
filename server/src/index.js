@@ -4,7 +4,7 @@ const connectDB = require("./config/db");
 const { initSocket } = require("./config/socket");
 require("dotenv").config();
 
-const startServer = async () => {
+const startServer = async () => {  // Initialize environment variables
   try {
     await connectDB();
     console.log("MongoDB connected successfully");
